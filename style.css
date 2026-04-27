@@ -1,7 +1,7 @@
 :root {
     --main-color: #ffde21;
     --green: #004D00;
-    --brown: #e2a25a;
+    --brown: #654321;
     --white: #ffffff;
 }
 
@@ -33,7 +33,7 @@ body {
 }
 
 .logo {
-    width: 100px;
+    width: 60px;
 }
 
 .navbar a {
@@ -63,7 +63,7 @@ body {
 
 .content span {
     color: var(--main-color);
-    font-family: "Playfair Display", serif;
+    font-family: "Playwrite NO", cursive;
 }
 
 .btn2 {
@@ -84,11 +84,12 @@ body {
 
 .title span{
     color: var(--main-color);
+    font-family: "Playwrite NO", cursive;
 }
 
 .row, .cards, .row2 {
     display: flex;
-    gap: 20px;
+    gap: 40px;
     padding: 40px;
     align-items: center;
 }
@@ -120,6 +121,18 @@ body {
 /* PARTICIPE */
 .row3 {
     font-size: 18px;
+    align-items: center;
+    margin: 40px;
+}
+
+.row3 .title {
+    text-align: left;
+    align-items: center;
+}
+
+.row3 .title .span {
+    color: var(--main-color);
+    font-family: "Playwrite NO", cursive;
 }
 
 /* FOOTER IGUAL IMAGEM */
@@ -163,6 +176,57 @@ body {
     padding: 10px;
     border-radius: 50%;
 }
+
+/* pagina do qrcode */
+.qr {
+    background: url(flores.png)center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    padding-left: 20px;
+}
+
+.qr .title {
+    color: #000;
+    font-size: 20px;
+}
+
+.qr .title span {
+    font-size: 40px;
+    color: #000;
+    font-family: "Playwrite NO", cursive;
+}
+
+/* PAGINA PROJETO P */
+.home-container1{
+    margin: 75px;
+}
+
+.home-container1 h3 {
+    font-size: 50px;
+    color: var(--brown);
+}
+
+.home-container1 h3 span {
+    color: var(--main-color);
+    font-family: "Playwrite NO", cursive;
+    font-size: 50px;
+}
+
+.home-container1 p {
+    color: #000;
+}
+
+.title2 span {
+    font-size: 30px;
+    color: var(--green);
+}
+
+.title2 {
+    color: #000;
+}
+
 
 /* RESPONSIVO */
 @media (max-width: 768px) {
