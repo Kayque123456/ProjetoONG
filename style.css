@@ -1,0 +1,173 @@
+:root {
+    --main-color: #ffde21;
+    --green: #004D00;
+    --brown: #e2a25a;
+    --white: #ffffff;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* HEADER */
+.header {
+    position: fixed;
+    width: 100%;
+    background: var(--brown);
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+/* HOME */
+.home-container {
+    height: 100vh;
+    background: url('fotoinicial.jpeg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    padding-left: 20px;
+}
+
+.content h3 {
+    font-size: 40px;
+    color: var(--green);
+}
+
+.content {
+    max-width: 500px;
+}
+
+.content span {
+    color: var(--main-color);
+    font-family: "Playfair Display", serif;
+}
+
+.btn2 {
+    background: var(--main-color);
+    padding: 10px 25px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+/* SEÇÕES */
+.title, .title2 {
+    text-align: center;
+    padding: 40px;
+    color: var(--green);
+}
+
+.title span{
+    color: var(--main-color);
+}
+
+.row, .cards, .row2 {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    align-items: center;
+}
+
+.row img, .row2 img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.cards {
+    justify-content: center;
+}
+
+.card {
+    max-width: 400px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card p {
+    padding: 15px;
+}
+
+/* PARTICIPE */
+.row3 {
+    font-size: 18px;
+}
+
+/* FOOTER IGUAL IMAGEM */
+.footer {
+    width: 100%;
+    background: linear-gradient(to right, #0a3d0a, #1f7a1f);
+    color: white;
+    padding: 40px 60px;
+    
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* logo + texto */
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-left img {
+    width: 60px;
+}
+
+/* contato */
+.footer-center p {
+    margin: 5px 0;
+}
+
+/* redes */
+.footer-right i {
+    font-size: 20px;
+    margin: 0 10px;
+    background: white;
+    color: var(--green);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .row, .cards, .row2, .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
