@@ -178,13 +178,28 @@ body {
 }
 
 /* pagina do qrcode */
+
 .qr {
-    background: url(flores.png)center/cover no-repeat;
+    background: url(./flores.png) right center/cover no-repeat;
+    background-size: 27rem;
     height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 50px;
     padding-left: 20px;
+}
+
+.qr .row {
+    display: flex;
+    justify-content: space-around;
+    width: 200rem;
+    height: 80vh;
+}
+
+.qr .row img {
+    width: 100%;
+    max-width: 33rem;
 }
 
 .qr .title {
