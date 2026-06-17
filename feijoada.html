@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feijoada Anual</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+      <header class="hero3">
+   <div>
+     
+          </div>
+    <nav class="navbar">
+      <div class="navbar1">
+        
+        <div class="logo"><a href="./index.html">PROJETO GIRASSOL</a></div>
+      </div>
+
+      <ul class="menu">
+        <li><a href="./index.html#linksobre">Sobre</a></li>
+        <li><a href="./index.html#linkparticipe">Participe</a>
+        <li><a href="./index.html#linkmomentos">Momentos</a></li>
+        <li><a href="./index.html#linkfundadores">fundadores</a></li>
+        <li><a href="#linkcontatos">Contatos</a></li>
+      </ul>
+       
+        
+        
+       <div class="btn">
+        <button onclick="mostrarLogin()">Doe</button>
+       </div>
+  <div id="overlay" onclick="fecharLogin()"></div>
+
+  <div id="loginDiv">
+
+    <h2>DOAÇÃO COM PIX</h2>
+    <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=1200&auto=format&fit=crop"><br><br>
+    <p>Aponte para sua câmera para o QR CODE<br>ou use nossa chave pix</p><br><br>
+    
+    <div class="btn">
+      <button onclick="fecharLogin()">Fechar</button>
+    </div>
+   
+  </div>
+  
+     
+        
+      <div class="menu-mobile">
+        ☰
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <h1>
+        Um banquete de tradições em cada grão de feijão.
+      </h1>
+      
+      <div class="btn2">
+        <button onclick="mostrarLogin()">Doe</button>
+      </div>
+  
+    </div>
+    
+  </header>
+
+
+    <section class="produto">
+        <div class="produto-card">
+            <img src="./img/img10.png" ><br><br>
+            <div class="conteudo">
+             <h2>A verdadeira harmonia da cozinha brasileira é encontrada na feijoada.</h2>
+             <br>
+             <p>Nossa feijoada anual é realizada todo mês de abril, é uma celebração rica em cultura e tradição. Neste dia especial, é costume reunir amigos e familiares para compartilhar uma deliciosa feijoada, prato que simboliza a união e a força da comunidade. E para celebrar a força da comunidade, nada mais justo do que levar a feijoada até eles, a nossa comunidade... Essa é a nossa pratica de todos os anos! <br>
+              A feijoada, preparada com feijão preto, carnes variadas e temperos especiais, é servida com arroz, couve, farofa, e repleta de carinho. Criando uma refeição que é tanto um banquete quanto uma forma de agradecimento.<br>
+              Que neste dia, possamos celebrar a vida, as nossas raízes e a importância da união em nossas vidas.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="banner">
+        <h2>
+          Cada panela de feijoada carrega não apenas sabores, mas a lembrança de que pequenas atitudes, paciência e amizade transformam uma refeição em uma celebração de afetos e memórias.
+        </h2>
+    </section>
+
+    <section class="banner1">
+    <section class="passos">
+        <div class="steps">
+          
+            <div class="step1">
+              <div class="step">
+                <img src="./img/img13.png">
+              </div>
+                <h3>08/10/2024</h3>
+                <p></p>
+            </div>
+          
+            <div class="step1">
+              <div class="step">
+                <img src="./img/img12.png" >
+              </div>
+                <h3>26/04/2026</h3>
+                <p></p> 
+              </div>
+        </div>
+    </section>
+    </section>
+
+    
+    
+  <footer class="footer" id="linkcontatos">
+
+    <div class="newsletter">
+      <h2>Projeto Girassol</h2>
+      
+              
+        <div class="footer-center">
+            <p><i class="fa-solid fa-phone"></i> (00) 00000-0000</p>
+            <p><i class="fa-solid fa-envelope"></i> contato@projetogirassol.org</p>
+            <p><i class="fa-solid fa-location-dot"></i> Cidade - SP</p>
+        </div>
+
+
+        <div class="footerl">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+        </div>
+
+
+    <div class="footer-bottom">
+      <p>© 2025 Projeto Girassol. Esperança e vida para o futuro.</p>
+    </div>
+
+  </footer>
+  
+  <script>
+
+
+  const mobileButton = document.querySelector('.menu-mobile');
+  const menu = document.querySelector('.menu');
+
+  mobileButton.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+  
+  const buttons = document.querySelectorAll('.btn');
+
+  buttons.forEach((button) => {
+
+    button.addEventListener('mouseenter', () => {
+      button.style.transform = 'scale(1.05)';
+    });
+
+    button.addEventListener('mouseleave', () => {
+      button.style.transform = 'scale(1)';
+    });
+
+  });
+  
+  </script>
+  
+</body>
+</html>
