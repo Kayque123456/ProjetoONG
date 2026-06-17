@@ -1,135 +1,229 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ONG girassol</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <!-- FONTES -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap" rel="stylesheet">
-
-    <!-- ÍCONES -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-
-    <title>Projeto Girassol</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- HEADER -->
-<header class="header">
-    <div class="header-content">
-        <img src="logo.png" class="logo"> 
+  
+ 
+  <header class="hero">
+   <div>
+     
+          </div>
+    <nav class="navbar">
+      <div class="navbar1">
+        
+        <div class="logo">PROJETO GIRASSOL</div>
+      </div>
 
-        <nav class="navbar">
-            <a href="#quemsomos">Quem somos</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#participe">Participe</a>
-            <a href="#contato">Contato</a>
-        </nav>
+      <ul class="menu">
+        <li><a href="#linksobre">Sobre</a></li>
+        <li><a href="#linkparticipe">Participe</a>
+        <li><a href="#linkmomentos">Momentos</a></li>
+        <li><a href="#linkfundadores">fundadores</a></li>
+        <li><a href="#linkcontatos">Contatos</a></li>
+      </ul>
+       
+        
+        
+       <div class="btn">
+        <button onclick="mostrarLogin()">Doe</button>
+       </div>
+  <div id="overlay" onclick="fecharLogin()"></div>
+
+  <div id="loginDiv">
+
+    <h2>DOAÇÃO COM PIX</h2>
+    <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=1200&auto=format&fit=crop"><br><br>
+    <p>Aponte para sua câmera para o QR CODE<br>ou use nossa chave pix</p><br><br>
+    
+    <div class="btn">
+      <button onclick="fecharLogin()">Fechar</button>
     </div>
-</header>
+   
+  </div>
+  
+     
+        
+      <div class="menu-mobile">
+        ☰
+      </div>
+    </nav>
 
-<!-- HOME -->
-<section class="home-container">
-    <div class="content">
-        <br><br>
-        <h3>Com a sua doação <span>transformamos</span> a vida de milhares de pessoas</h3>
-        <br>
-        <p>Acreditamos no poder do amor, da solidariedade e da união para construir um mundo melhor.</p>
-        <br>
-        <a href="qrcode.html" class="btn2">Doe</a>
+    <div class="hero-content">
+      <h1>
+        Conhecendo histórias<br>
+        e mudando mundos.<br>
+        
+      </h1>
+      
+      <div class="btn2">
+        <button onclick="mostrarLogin()">Doe</button>
+      </div>
+  
     </div>
-</section>
-
-<!-- QUEM SOMOS -->
-<section id="quemsomos">
-    <h1 class="title"><span>Quem</span> Somos</h1>
-
-    <div class="row">
-        <img src="https://veiling.com.br/wp-content/uploads/2026/03/girassol-mini-s-bright-69c4194ab2146.jpeg">
-
-        <p>
-            Nossa missão é levar luz, dignidade e apoio às famílias em vulnerabilidade social.<br>
-            O Projeto Girassol nasceu para transformar vidas com amor e solidariedade.
-        </p>
+      
+      
+  
     </div>
-</section>
+   
+  </header>
 
-<!--Projetos-->
-<section id="projetos">
-    <h1 class="title2">Nossos Projetos</h1>
+  <section class="sobre" id="linksobre" >
+    
+  
+    <h2>sobre</h2>
+    <p class="subtitle">
+      Ações que levam a esperança e o cuidado para quem precisa.
+    </p>
 
     <div class="cards">
 
-        <div class="card">
-            <img src="https://veiling.com.br/wp-content/uploads/2026/03/girassol-mini-s-bright-69c4194ab2146.jpeg">
-            <p><strong>Páscoa Feliz</strong><br><br>
-            Levamos alegria e esperança para crianças por meio de doações.
-            </p>
-            <a href="projetop.html" class="btn2">Saiba mais</a>
-            
-        </div>
+      <div class="card active">
+        <img src="./img/img8.jpeg" alt="">
+        <h3>Quem somos</h3>
+        <p>
+          Nossa missão é levar luz, dignidade e apoio às famílias em vulnerabilidade social. O projeto Girassol nasceu para transformar vidas com amor e solidariedade.
+        </p>
+      </div>
 
-        <div class="card">
-            <img src="https://veiling.com.br/wp-content/uploads/2026/03/girassol-mini-s-bright-69c4194ab2146.jpeg">
-            <p><strong>Feijoada Anual</strong><br><br>
-            Evento beneficente com comida e união.</p>
-              <a href="projetof.html" class="btn2">Saiba mais</a>
-        </div>
+      <div class="card">
+        <img src="./img/pascoafeliz.jpeg" alt="">
+        <h3>Páscoa Feliz</h3>
+        <p>
+          Levando alegria e esperança para crianças em situação de vulnerabilidade por meio da doação de ovos de páscoa e momentos especiais.
+        </p>
+        <a href="pascoa.html">
+          <button class="btn small">Saiba Mais</button>
+        </a>
+      </div>
 
-    </div>
-</section>
-
-<!-- PARTICIPE -->
-<section id="participe" class="participe">
-    <div class="row2">
-        
-        <div class="row3">
-            <h1 class="title">Por que ser
-               <br>
-               <span>voluntário?
-               </span>
-            </h1>
-            
-            <p>Ser voluntário é doar tempo, talento <br> e coração para
-               transformar realidades.
-            </p>
-            <br>
-
-            <ul>
-                <li>Fazer o bem</li>
-                <li>Ajudar pessoas</li>
-                <li>Transformar vidas</li>
-                <li>Impactar a comunidade</li>
-            </ul>
-        </div>
-        
-        <img src="https://veiling.com.br/wp-content/uploads/2026/03/girassol-mini-s-bright-69c4194ab2146.jpeg">
+      <div class="card">
+        <img src="./img/feijoadaanual.jpeg" alt="">
+        <h3>Feijoada Anual</h3>
+        <p>
+          Nossa tradicional evento que reúne pessoas em um dia de festa e boa comida.
+        </p>
+        <a href="feijoada.html">
+          <button class="btn small">Saiba Mais</button>
+        </a>
+      </div>
 
     </div>
-</section>
+   
 
+  <section class="about" id="linkparticipe">
 
-<footer class="footer" id="contato">
-    <div class="footer-content">
+    <div class="about-image">
+  </div>
 
-        <!-- LOGO -->
-        <div class="footer-left">
-            <img src="logo.png">
-            <div>
-                <h3>Projeto Girassol</h3>
-                <p>Solidariedade que floresce.</p>
-            </div>
+    <div class="about-content">
+      <h2>
+        Por que ser voluntário?
+      </h2>
+
+      <p>Ser voluntário é uma forma poderosa de transformar vidas — inclusive a sua. Além de contribuir para causas sociais e ambientais, o voluntariado fortalece habilidades pessoais e profissionais, amplia redes de contato e promove bem-estar emocional. </p>
+        <br>
+      
+      <button class="btn">Partícipe</button>
+    </div>
+  
+  
+  </section>
+
+  <section class="news" id="linkmomentos">
+
+    <div class="news-header">
+      <h2>Momentos</h2>
+      <a href="#">Alegria a todos</a>
+    </div>
+
+    <div class="news-grid">
+
+      <article class="news-item">
+        <img src="./img/img5.png" alt="">
+        <div class="newss">
+          <span>PÁSCOA</span>
+          <h3>Alegria que contagia — o momento em que o carinho e o sorriso se encontram.</h3>
         </div>
+      </article>
 
-        <!-- CONTATO -->
+      <article class="news-item">
+        <img src="./img/img4.png" alt="">
+        <div class="newss">
+          <span>FEIJOADA</span>
+          <h3>Gestos que alimentam — mostrando que solidariedade também é sabor.</h3>
+        </div>
+      </article>
+
+      <article class="news-item">
+        <img src="./img/img9.png" alt="">
+        <div class="newss">
+          <span>PÁSCOA</span>
+          <h3>Trabalho com propósito — mãos que constroem e compartilham.</h3>
+        </div>
+      </article>
+
+      <article class="news-item">
+        <img src="./img/img7.png" alt="">
+        <div class="newss">
+          <span>FEIJOADA</span>
+          <h3>Sorrisos que inspiram — a magia de ver crianças felizes.</h3>
+        </div>
+      </article>
+
+    </div>
+
+  </section>
+
+  
+  <section class="categories" id="linkfundadores">
+    
+
+    <h2>Principais Participantes Do Projeto Girrasol</h2>
+
+    <p>
+     Cada participante do Projeto Girassol é uma luz que fortalece nossa missão: juntos, unimos forças para proteger a vida e cultivar esperança para as futuras gerações.
+    </p>
+
+    <div class="category-grid">
+
+      <div class="category">
+        <img src="./img/guilherme.jpeg" alt="">
+        <span>Guilherme (fundador)</span>
+      </div>
+
+      <div class="category">
+        <img src="./img/andrew.jpeg" alt="">
+        <span>Andrew</span>
+      </div>
+
+      <div class="category">
+        <img src="./img/fernanda.jpeg" alt="">
+        <span>Fernanda</span>
+      </div>
+
+      <div class="category">
+        <img src="./img/img11.jpeg" alt="">
+        <span>Karla</span>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer" id="linkcontatos">
+
+    <div class="newsletter">
+      <h2>Projeto Girassol</h2>
+      
+              <!-- CONTATO -->
         <div class="footer-center">
             <p><i class="fa-solid fa-phone"></i> (00) 00000-0000</p>
             <p><i class="fa-solid fa-envelope"></i> contato@projetogirassol.org</p>
@@ -137,14 +231,79 @@
         </div>
 
         <!-- REDES -->
-        <div class="footer-right">
+        <div class="footerl">
             <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-whatsapp"></i>
         </div>
 
-    </div>
-</footer>
 
+    <div class="footer-bottom">
+      <p>© 2025 Projeto Girassol. Esperança e vida para o futuro.</p>
+    </div>
+
+  </footer>
+
+<script>
+
+
+  const mobileButton = document.querySelector('.menu-mobile');
+  const menu = document.querySelector('.menu');
+
+  mobileButton.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+
+
+
+  const cards = document.querySelectorAll(
+    '.card, .news-item, .category, .about-content'
+  );
+
+  const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach((entry) => {
+
+      if(entry.isIntersecting){
+        entry.target.classList.add('show');
+      }
+
+    });
+
+  }, {
+    threshold: 0.2
+  });
+
+  cards.forEach((card) => {
+    observer.observe(card);
+  });
+
+
+  const buttons = document.querySelectorAll('.btn');
+
+  buttons.forEach((button) => {
+
+    button.addEventListener('mouseenter', () => {
+      button.style.transform = 'scale(1.05)';
+    });
+
+    button.addEventListener('mouseleave', () => {
+      button.style.transform = 'scale(1)';
+    });
+
+  });
+    
+    
+    function mostrarLogin() {
+      document.getElementById("loginDiv").style.display = "flex"; /* block */
+      document.getElementById("overlay").style.display = "flex";
+    }
+
+    function fecharLogin() {
+      document.getElementById("loginDiv").style.display = "none";
+      document.getElementById("overlay").style.display = "none";
+    }
+  
+
+</script>
 </body>
 </html>
