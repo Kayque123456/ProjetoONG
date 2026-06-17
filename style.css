@@ -283,6 +283,15 @@ button {
   justify-content:center;
 }
 
+/* botão participe */
+
+.about-content a{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-decoration: none;
+}
+
 .about-content h2{
   font-size:48px;
   margin-bottom:20px;
