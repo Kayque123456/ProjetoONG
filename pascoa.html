@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Páscoa Feliz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+      <header class="hero2">
+   <div>
+     
+          </div>
+    <nav class="navbar">
+      <div class="navbar1">
+        
+        <div class="logo"><a href="./index.html">PROJETO GIRASSOL</a></div>
+      </div>
+
+      <ul class="menu">
+        <li><a href="./index.html#linksobre">Sobre</a></li>
+        <li><a href="./index.html#linkparticipe">Participe</a>
+        <li><a href="./index.html#linkmomentos">Momentos</a></li>
+        <li><a href="./index.html#linkfundadores">fundadores</a></li>
+        <li><a href="#linkcontatos">Contatos</a></li>
+      </ul>
+       
+        
+        
+       <div class="btn">
+        <button onclick="mostrarLogin()">Doe</button>
+       </div>
+  <div id="overlay" onclick="fecharLogin()"></div>
+
+  <div id="loginDiv">
+
+    <h2>DOAÇÃO COM PIX</h2>
+    <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=1200&auto=format&fit=crop"><br><br>
+    <p>Aponte para sua câmera para o QR CODE<br>ou use nossa chave pix</p><br><br>
+    
+    <div class="btn">
+      <button onclick="fecharLogin()">Fechar</button>
+    </div>
+   
+  </div>
+  
+     
+        
+      <div class="menu-mobile">
+        ☰
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <h1>
+        Mais do que chocolate, que haja esperança e união.
+      </h1>
+      
+      <div class="btn2">
+        <button onclick="mostrarLogin()">Doe</button>
+      </div>
+  
+    </div>
+    
+  </header>
+
+
+    <section class="produto">
+        <div class="produto-card">
+            <img src="./img/img3.png" ><br><br>
+            <div class="conteudo">
+             <h2>Mais que chocolates, entregamos amor!</h2>
+             <br>
+             <p>O Projeto Girassol, maior ONG do Capão Redondo, espalha solidariedade e doçura pelas ruas distribuindo chocolates às crianças da comunidade. Nossa missão já alcançou diferentes realidades: realizamos entregas de ovos de Páscoa na tribo Krukutu, levando respeito e inclusão cultural, e também levamos carinho e esperança a casas de orfanatos. Cada ação é uma semente de amor que floresce em sorrisos, mostrando que o chocolate pode ser muito mais que um doce — pode ser um símbolo de afeto, união e transformação social.</p>
+            
+            </div>
+        </div>
+    </section>
+
+
+    <section class="banner">
+        <h2>Transformar uma comunidade exige tempo e união, mas pequenos gestos também fazem a diferença. Por isso, nossa ONG utiliza o chocolate para levar esperança, alegria e promover a transformação social.
+        </h2>
+    </section>
+
+    <section class="banner1">
+    <section class="passos">
+        <div class="steps">
+          
+            <div class="step1">
+              <div class="step">
+                <img src="./img/img1.png">
+              </div>
+                <h3>08/10/2024</h3>
+                <p>No dia 8 de outubro de 2024, a ONG Girassol realizou uma ação de Páscoa em sua sede, localizada na zona sul de São Paulo. A atividade reuniu crianças e adolescentes atendidos pelo projeto, oferecendo brincadeiras, oficinas culturais e a entrega de ovos de chocolate, com o objetivo de fortalecer os vínculos comunitários e proporcionar momentos de alegria às famílias da região.</p>
+            </div>
+          
+            <div class="step1">
+              <div class="step">
+                <img src="./img/img2.png" >
+              </div>
+                <h3>10/04/2025</h3>
+                <p>Na Aldeia Krukutu, a entrega ganhou ainda mais significado com a presença de personagens lúdicos que encantaram as crianças. Em parceria com o CECI – Centro de Educação e Cultura Indígena, o momento foi marcado por alegria, união e valorização cultural. Cada sorriso registrado reforça a importância de iniciativas que aproximam comunidades e fortalecem tradições.</p> </div>
+          
+            
+          
+        </div>
+    </section>
+    </section>
+
+    
+    
+  <footer class="footer" id="linkcontatos">
+
+    <div class="newsletter">
+      <h2>Projeto Girassol</h2>
+      
+              
+        <div class="footer-center">
+            <p><i class="fa-solid fa-phone"></i> (00) 00000-0000</p>
+            <p><i class="fa-solid fa-envelope"></i> contato@projetogirassol.org</p>
+            <p><i class="fa-solid fa-location-dot"></i> Cidade - SP</p>
+        </div>
+
+
+        <div class="footerl">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+        </div>
+
+
+    <div class="footer-bottom">
+      <p>© 2025 Projeto Girassol. Esperança e vida para o futuro.</p>
+    </div>
+
+  </footer>
+  
+  <script>
+
+
+  const mobileButton = document.querySelector('.menu-mobile');
+  const menu = document.querySelector('.menu');
+
+  mobileButton.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+  
+  const buttons = document.querySelectorAll('.btn');
+
+  buttons.forEach((button) => {
+
+    button.addEventListener('mouseenter', () => {
+      button.style.transform = 'scale(1.05)';
+    });
+
+    button.addEventListener('mouseleave', () => {
+      button.style.transform = 'scale(1)';
+    });
+
+  });
+  
+  </script>
+  
+</body>
+</html>
